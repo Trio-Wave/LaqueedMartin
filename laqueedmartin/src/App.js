@@ -1,21 +1,26 @@
-import './App.css';
+import './App.css'
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import LandingPage from './LandingPage/LandingPage'
+import NavigationBar from './NavigationBar/NavigationBar'
 
 function App() {
   return (
-    <div className="App">
-      <flexbox>
-      <header>
-        Navigation Bar
-      </header>
-      <div>
-        Landing Page
+    <Router>
+      <div className="App">
+        <header>
+          <NavigationBar />
+        </header>
+        <div className='pageContent'>
+          <Switch>
+            <Route path='/'>
+              <LandingPage />
+            </Route>
+          </Switch>
+        </div>
       </div>
-      <footer>
-        footer stuff
-      </footer>
-      </flexbox>
-    </div>
+    </Router>
   );
 }
 
-export default App;
+export default App
