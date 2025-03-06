@@ -1,8 +1,10 @@
 import './App.css'
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import LandingPage from './LandingPage/LandingPage'
 import NavigationBar from './NavigationBar/NavigationBar'
+import Portfolio from './Portfolio/Portfolio'
+import AboutMe from './AboutMe/AboutMe'
 
 function App() {
   return (
@@ -12,15 +14,15 @@ function App() {
           <NavigationBar />
         </header>
         <div className='pageContent'>
-          <Switch>
-            <Route path='/'>
-              <LandingPage />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path='/' element={<LandingPage />} />
+            <Route path='/Portfolio' element={<Portfolio />} />
+            <Route path='/AboutMe' element={<AboutMe />} />
+          </Routes>
         </div>
       </div>
     </Router>
-  );
+  )
 }
 
 export default App

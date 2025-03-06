@@ -2,7 +2,10 @@ import React from 'react'
 
 const LandingPage = () => {
     return (
-        <div>Home Page</div>
+        <div>
+            <h1>Olivia's Portfolio Website</h1>
+
+        </div>
     )
 }
 

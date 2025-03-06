@@ -1,0 +1,6 @@
+.NavigationBar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(208, 95, 240, 0.849);
+    padding: 20px;
+}   
