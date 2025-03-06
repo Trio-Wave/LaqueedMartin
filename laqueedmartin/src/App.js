@@ -5,6 +5,7 @@ import LandingPage from './LandingPage/LandingPage'
 import NavigationBar from './NavigationBar/NavigationBar'
 import Portfolio from './Portfolio/Portfolio'
 import AboutMe from './AboutMe/AboutMe'
+import Footer from './Footer/Footer'
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
             <Route path='/AboutMe' element={<AboutMe />} />
           </Routes>
         </div>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </Router>
   )

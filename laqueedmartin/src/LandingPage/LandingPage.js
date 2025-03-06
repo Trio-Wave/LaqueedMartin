@@ -1,11 +1,13 @@
 import React from 'react'
+import './LandingPage.css'
 
 const LandingPage = () => {
     return (
-        <div>
-            <h1>Olivia's Portfolio Website</h1>
+        <>
+        <div className='LandingPage'></div>
+           
 
-        </div>
+        </>
     )
 }
 

@@ -1,0 +1,12 @@
+.Footer {
+    display: flex;
+    justify-content: space-evenly;
+    mix-blend-mode: color;
+    background-image: linear-gradient(to left, #64DAE4 , #F7A8A3, #90539C);
+    padding: 20px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
